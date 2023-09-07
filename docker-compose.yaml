@@ -10,12 +10,12 @@ services:
     - "./rancher-data:/var/lib/rancher"
     privileged: true
     networks:
-    - app-network
+    - server-network
 
 #Docker Networks
 # docker network create app-network
 networks:
-  app-network:
+  server-network:
     driver: bridge
     external: true
 #Volumes
